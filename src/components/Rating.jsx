@@ -3,7 +3,6 @@ import Star from '../images/icon-star.svg'
 
 function Rating({changeRating}) {
     const [numClicked, setNumClicked] = useState('');  
-
     function handleSelect(e) {
         // set state with the number clicked
         setNumClicked(e.target.innerHTML)
@@ -43,9 +42,13 @@ function Rating({changeRating}) {
     }
 
     function handleSubmit() {
-        document.getElementById('ratingContainer').style.display = 'none'
-        document.getElementById('thankYouContainer').classList.remove('hidden');
-        changeRating(numClicked)
+        if(numClicked === '') {
+            window.alert('You must select a number to proceed.')
+        } else {
+            document.getElementById('ratingContainer').style.display = 'none'
+            document.getElementById('thankYouContainer').classList.remove('hidden');
+            changeRating(numClicked)
+        }
     }
 
   return (
