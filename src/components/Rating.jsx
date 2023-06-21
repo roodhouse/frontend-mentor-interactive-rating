@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Star from '../images/icon-star.svg'
 
-
-
-function Rating() {
-
+function Rating({changeRating}) {
+    const [numClicked, setNumClicked] = useState('');  
     function handleSelect(e) {
+        // set state with the number clicked
+        setNumClicked(e.target.innerHTML)
+    
         // put all elements with a class of number into an array
         const allNumbers = document.querySelectorAll('.number')
         const numbersArray = Array.from(allNumbers)
@@ -40,6 +41,16 @@ function Rating() {
         }
     }
 
+    function handleSubmit() {
+        if(numClicked === '') {
+            window.alert('You must select a number to proceed.')
+        } else {
+            document.getElementById('ratingContainer').style.display = 'none'
+            document.getElementById('thankYouContainer').classList.remove('hidden');
+            changeRating(numClicked)
+        }
+    }
+
   return (
     <>
           <div id='starContainer' className='w-[40px] h-[40px] bg-darkBlue rounded-[40px] flex justify-center items-center mb-4'>
@@ -71,7 +82,7 @@ function Rating() {
             </div>
           </div>
           <div id='btnContainer' className='w-full rounded-[22.5px] bg-orange flex items-center justify-center py-3 text-white font-["Overpass"] text-sm font-bold'>
-            <button id='submit' className='tracking-[1.867px]'>SUBMIT</button>
+            <button id='submit' onClick={handleSubmit} className='tracking-[1.867px] w-full'>SUBMIT</button>
           </div>
     </>
   )

@@ -1,14 +1,15 @@
 import React from 'react'
 import ThanksImg from '../images/illustration-thank-you.svg'
 
-function Thanks() {
+function Thanks({numClicked}) {
+    // console.log(`from in thanks ${changeRating}`)
   return (
     <>
           <div id='imageContainer' className='mb-6'>
             <img src={ThanksImg} alt='thanks'/>
           </div>
           <div id='resultContainer' className='bg-darkBlue py-[5px] px-3 rounded-[22.5px] text-orange mb-6'>
-            <p>You selected <span id='theChoice'>4</span> out of 5</p>
+            <p>You selected <span id='theChoice'>{numClicked}</span> out of 5</p>
           </div>
           <div id='thankYouTextContainer' className='text-center'>
             <div id='thankHeading' className='font-["Overpass"] text-white font-bold text-2xl mb-[10px]'>
