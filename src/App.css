@@ -1,3 +1,4 @@
 #ratingContainer, #thankYouContainer {
 background: radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%);
+max-width: 412px;
 }

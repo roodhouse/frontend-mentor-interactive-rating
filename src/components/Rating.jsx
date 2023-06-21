@@ -53,31 +53,31 @@ function Rating({changeRating}) {
 
   return (
     <>
-          <div id='starContainer' className='w-[40px] h-[40px] bg-darkBlue rounded-[40px] flex justify-center items-center mb-4'>
-            <img src={Star} alt='star' className='w-[14px] h-[14px]'/>
+          <div id='starContainer' className='w-[40px] h-[40px] bg-darkBlue rounded-[40px] flex justify-center items-center mb-4 xl:w-[48px] xl:h-[48px] xl:rounded-[48px] xl:mb-[30px]'>
+            <img src={Star} alt='star' className='w-[16px] h-[16px]'/>
           </div>
           <div id='textContainer' className='flex flex-col mb-6'>
-            <div id='textHeading' className='text-white font-["Overpass"] font-bold text-2xl mb-[10px]'>
+            <div id='textHeading' className='text-white font-["Overpass"] font-bold text-2xl mb-[10px] xl:text-[28px]'>
               <h1>How did we do?</h1>
             </div>
-            <div id='textBody' className='text-lightGray font-["Overpass"] text-sm leading-[22px]'>
+            <div id='textBody' className='text-lightGray font-["Overpass"] text-sm leading-[22px] xl:text-[15px] xl:leading-[24px]'>
               <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             </div>
           </div>
           <div id='numberContainer' className='flex justify-between mb-6'>
-            <div id='oneContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center'>
+            <div id='oneContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
               1
             </div>
-            <div id='twoContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center'>
+            <div id='twoContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
               2
             </div>
-            <div id='threeContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center'>
+            <div id='threeContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
               3
             </div>
-            <div id='fourContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center'>
+            <div id='fourContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
               4
             </div>
-            <div id='fiveContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center'>
+            <div id='fiveContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
               5
             </div>
           </div>
