@@ -5,11 +5,12 @@ import Thanks from './components/Thanks';
 
 
 function App() {
+  // declare state for entire app
   const [numClicked, setNumClicked] = useState('');  
+  // define function to pass to child that will update the state for the entire app
   const changeRating = (newRating) => {
     setNumClicked(newRating);
   }
-  console.log(numClicked)
   return (
     <div className="App">
       <div id='contentWrapper' className='bg-veryDarkBlue h-screen flex flex-col justify-center items-center px-6'>
@@ -17,6 +18,7 @@ function App() {
           <Rating changeRating={changeRating}/>
         </div>
         <div id='thankYouContainer' className='hidden rounded-[15px] px-6 pt-[42px] pb-[37px] flex flex-col items-center'>
+          {/* pass overall state value to other component */}
           <Thanks numClicked={numClicked} />
         </div>
       </div>
