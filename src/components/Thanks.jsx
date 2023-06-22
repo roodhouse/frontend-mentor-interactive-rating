@@ -2,7 +2,6 @@ import React from 'react'
 import ThanksImg from '../images/illustration-thank-you.svg'
 
 function Thanks({numClicked}) {
-    // console.log(`from in thanks ${changeRating}`)
   return (
     <>
           <div id='imageContainer' className='mb-6 xl:mb-8'>
