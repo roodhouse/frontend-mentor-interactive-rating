@@ -64,25 +64,25 @@ function Rating({changeRating}) {
               <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             </div>
           </div>
-          <div id='numberContainer' className='flex justify-between mb-6'>
-            <div id='oneContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
+          <div id='numberContainer' className='flex justify-between mb-6 xl:mb-8'>
+            <div id='oneContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px] cursor-pointer hover:bg-orange hover:text-white'>
               1
             </div>
-            <div id='twoContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
+            <div id='twoContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px] cursor-pointer hover:bg-orange hover:text-white'>
               2
             </div>
-            <div id='threeContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
+            <div id='threeContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px] cursor-pointer hover:bg-orange hover:text-white'>
               3
             </div>
-            <div id='fourContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
+            <div id='fourContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px] cursor-pointer hover:bg-orange hover:text-white'>
               4
             </div>
-            <div id='fiveContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px]'>
+            <div id='fiveContainer' onClick={handleSelect} className='number w-[42px] h-[42px] rounded-[42px] bg-darkBlue text-medGray text-sm leading-[24px] font-["Overpass"] font-bold tracking-[0.175px] flex justify-center items-center xl:w-[51px] xl:h-[51px] xl:rounded-[51px] xl:text-base xl:leading-[24px] xl:tracking-[0.2px] cursor-pointer hover:bg-orange hover:text-white'>
               5
             </div>
           </div>
-          <div id='btnContainer' className='w-full rounded-[22.5px] bg-orange flex items-center justify-center py-3 text-white font-["Overpass"] text-sm font-bold'>
-            <button id='submit' onClick={handleSubmit} className='tracking-[1.867px] w-full'>SUBMIT</button>
+          <div id='btnContainer' className='w-full rounded-[22.5px] bg-orange flex items-center justify-center text-white font-["Overpass"] text-sm font-bold xl:text-[15px] hover:bg-white hover:text-orange'>
+            <button id='submit' onClick={handleSubmit} className='tracking-[1.867px] w-full xl:tracking-[2px] py-3 hover:cursor-pointer'>SUBMIT</button>
           </div>
     </>
   )
