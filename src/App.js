@@ -17,7 +17,7 @@ function App() {
         <div id='ratingContainer' className='rounded-[15px] px-6 pt-6 pb-8 xl:pt-8 xl:pl-8 xl:pb-8 xl:pr-10'>
           <Rating changeRating={changeRating}/>
         </div>
-        <div id='thankYouContainer' className='hidden rounded-[15px] px-6 pt-[42px] pb-[37px] flex flex-col items-center'>
+        <div id='thankYouContainer' className='hidden rounded-[15px] px-6 pt-[42px] pb-[37px] flex flex-col items-center xl:py-[45px] xl:pl-8 xl:pr-10'>
           {/* pass overall state value to other component */}
           <Thanks numClicked={numClicked} />
         </div>
